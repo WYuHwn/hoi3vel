@@ -127,15 +127,15 @@ comments:
   comment_title: 留下你的足迹叭~👣👣👣
   giscus:
     src: https://giscus.app/client.js
-    data-repo: WYuHwn/WYuHwn.github.io # [在此输入仓库]
-    data-repo-id: R_kgDOMBMT2A # [在此输入仓库 ID]
+    data-repo: WYuHwn/hoi3vel # [在此输入仓库]
+    data-repo-id: R_kgDOQh5KYw # [在此输入仓库 ID]
     data-category: Q&A # [在此输入分类名]
-    data-category-id: DIC_kwDOMBMT2M4Cfvy7
-    data-mapping: pathname
+    data-category-id: DIC_kwDOQh5KY84CzWc3
+    data-mapping: url
     data-strict: 0
     data-reactions-enabled: 1
     data-emit-metadata: 0
-    data-input-position: top # top, bottom
+    data-input-position: bottom # top, bottom
     data-theme: preferred_color_scheme
     data-lang: zh-CN
     data-loading: lazy
