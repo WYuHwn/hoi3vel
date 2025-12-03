@@ -1,0 +1,4 @@
+name: Algorithm # 在面包屑导航上会显示较短的名字
+title: 算法实现 # 在列表页会显示完整的专栏标题
+description: 记录自己平时刷LeetCode所遇到的思路新颖的题目。
+order_by: -date # 默认是按发布日期倒序排序

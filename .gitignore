@@ -1,0 +1,11 @@
+# Hexo
+public/
+.deploy*/
+node_modules/
+db.json
+
+# Optional OS / Editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

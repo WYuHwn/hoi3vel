@@ -1,0 +1,57 @@
+# 自定义组件1
+welcome:
+  layout: markdown
+  title: 欢迎
+  content: |
+    这里是山药的博客，我是山药。
+
+# 自定义组件2
+recent:
+  layout: recent
+  rss: /atom.xml
+  limit: 5
+
+# 自定义组件3
+related:
+  layout: related
+
+# 自定义组件4
+tagcloud:
+  layout: tagcloud
+  title: 标签云
+  # 标签云配置
+  min_font: 12
+  max_font: 24
+  amount: 100
+  orderby: name
+  order: 1 # 1, sac 升序；-1, desc 降序
+  color: true # 使用颜色
+  start_color: #FFE6FF  # 开始的颜色。您可使用十六进位值（'#b700ff'），rgba（rgba(183, 0, 255, 1)），hsla（hsla(283, 100%, 50%, 1)）或 颜色关键字。此变量仅在 color 参数开启时才有用。
+  end_color: #DEAACC # 结束的颜色。您可使用十六进位值（'#b700ff'），rgba（rgba(183, 0, 255, 1)），hsla（hsla(283, 100%, 50%, 1)）或 颜色关键字。此变量仅在 color 参数开启时才有用。
+  show_count: false # 显示每个标签的文章总数
+
+# 自定义组件5
+ghuser:
+  layout: ghuser
+  username: WYuHwn
+  avatar: true
+  menu: true
+
+# 自定义组件6
+links_model:
+  layout: markdown
+  title: 友链申请手册
+  content: |
+    **申请须知**
+    <font size=0.5px>1.网站合法且无商业广告；</font>
+    <font size=0.5px>2.有实质性原创内容，不少于10篇；</font>
+    <font size=0.5px>3.有独立域名，非免费域名；</font>
+    <font size=0.5px>4.博客已持续运行至少1年。</br></font>
+
+# 自定义组件7
+trans_tools:
+  layout: markdown
+  title: 📌Tips
+  content: |
+    此处收藏一些实用的工具网站，点击对应卡片就可进行跳转，如果有些网站无法加载可能需要使用魔法\~</br>
+    同时也欢迎网友们在评论区留言心中宝藏工具网站，特别适合的我也会收藏的\~

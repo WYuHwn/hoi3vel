@@ -1,0 +1,142 @@
+logo:
+  subtitle: '一花一世界，一叶一菩提 | 📫: hoi3vel@gmail.com'
+  style:
+    leftbar:
+      background-image: url(https://img.hoi3vel.cn/config/background.webp)
+      blur-px: 100px # 模糊半径
+      blur-bg: var(--bg-a60) # 模糊颜色
+
+# 侧边栏主功能导航菜单
+menubar:
+  columns: 4 # 一行多少个
+  items: # 可按照自己需求增加，符合以下格式即可
+    - id: about
+      theme: '#815C94'
+      # icon: solar:notebook-bookmark-bold-duotone
+      title: 关于
+      url: /about/
+    - id: post # 页面中高亮的 menu_id
+      theme: '#AE88C3' # 高亮时的颜色，仅 svg 中 fill="currentColor" 时有效
+      # icon: solar:documents-bold-duotone # 支持 svg/img 标签，可以定义在 icons.yml 文件中，也支持外部图片的 URL
+      title: 文章 # 标题
+      url: / # 跳转链接，支持相对路径和绝对路径
+    - id: social
+      theme: '#CEA6E3'
+      # icon: solar:chat-square-like-bold-duotone
+      title: 友链
+      url: /friends/
+    - id: tools
+      theme: '#EFC6FF'
+      # icon: solar:planet-bold-duotone
+      title: 传送门
+      url: /explore/
+
+# 侧边栏页脚以及页面站点
+footer:
+  social:
+    rss:
+      icon: '<img src="https://img.hoi3vel.cn/config/rss.svg"/>'
+      url: https://www.hoi3vel.cn/atom.xml
+    github:
+      icon: '<img src="https://img.hoi3vel.cn/config/github.svg"/>'
+      url: https://github.com/WYuHwn
+    weibo:
+      icon: '<img src="https://img.hoi3vel.cn/config/weibo.svg"/>'
+      url: https://weibo.com/u/7792806695
+    leetcode:
+      icon: '<img src="https://img.hoi3vel.cn/config/leetcode.svg"/>'
+      url: https://leetcode.cn/u/hoi3vel/
+  sitemap:
+    - title: 导航
+      items:
+        - '[近期发布](/)'
+        - '[分类](/categories/)'
+        - '[标签](/tags/)'
+        - '[归档](/archives/)'
+    - title: 社交
+      items:
+        - '[友链](/friends/)'
+        - '[关于](/about/)'
+    - title: 协议
+      items:
+        - '[隐私政策](/privacy/)'
+        - '[免责声明](/claim/)'
+    - title: 更多
+      items:
+        - '[传送门](/explore/)'
+  content:
+    本站由 [{author.name}](/) 使用 [{theme.name} {theme.version}]({theme.tree}) 主题创建。</br>
+    本博客所有文章除特别声明外，均采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议，转载请注明出处。</br>
+    [渝ICP备-2024033351号-1](https://beian.miit.gov.cn/#/Integrated/recordQuery) | [浙公网安备33019202002449号](https://beian.mps.gov.cn/#/query/webSearch)
+
+style:
+  prefers_theme: auto # 指定网站主题模式 auto/light/dark
+  color:
+    theme: '#744DA9' # 主题色
+    accent: 'hsl(14 100% 57%)' # 强调色
+    link: '#bc91d8' # 超链接颜色
+  font-family:
+    body: '"LXGWWenKai"'
+    code: '"JetBrainsMono"'
+    codeblock: '"JetBrainsMono"'
+  leftbar:
+    background-color: var(--card) # var(--block)
+    background-image: url(https://img.hoi3vel.cn/config/background.webp)
+    blur-px: 100px
+    blur-bg: var(--bg-a60)
+    background-opacity: 0.8
+  site:
+    # background-image: 'url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.14/image/site-bg1@small.webp)'
+    background-image: 'url(https://img.hoi3vel.cn/config/background.webp)'
+    blur-px: 100px # 模糊半径
+    blur-bg: var(--bg-a75) # 模糊颜色
+  # 圆角大小
+  border-radius:
+    card: 12px # 卡片圆角
+    block: 12px # 块圆角
+    bar: 6px # 导航栏圆角
+    image: 6px # 图片圆角
+
+# 基础依赖
+# 基础依赖
+dependencies:
+  # 图片懒加载
+  lazyload:
+    js: https://gcore.jsdelivr.net/npm/vanilla-lazyload@19.1/dist/lazyload.min.js
+    transition: fade # blur, fade
+    fix_ratio: true # true / false
+
+# 顶部tab栏
+site_tree:
+  home:
+    leftbar: welcome, recent
+  blog:
+    nav_tabs: # 近期发布 分类 标签 归档 and ...
+      #'朋友文章': /friends/rss/ # 这里填写的链接要与对应页面一致，否则可能无法正确高亮
+      '近期发布': /
+      '分类': /categories/
+      '标签': /tags/
+      '专栏': /topic/
+      '归档': /archives/
+
+article:
+  share: [wechat, weibo, email, link]
+
+comments:
+  service: giscus
+  comment_title: 留下你的足迹叭~👣👣👣
+  giscus:
+    src: https://giscus.app/client.js
+    data-repo: WYuHwn/WYuHwn.github.io # [在此输入仓库]
+    data-repo-id: R_kgDOMBMT2A # [在此输入仓库 ID]
+    data-category: Q&A # [在此输入分类名]
+    data-category-id: DIC_kwDOMBMT2M4Cfvy7
+    data-mapping: pathname
+    data-strict: 0
+    data-reactions-enabled: 1
+    data-emit-metadata: 0
+    data-input-position: top # top, bottom
+    data-theme: preferred_color_scheme
+    data-lang: zh-CN
+    data-loading: lazy
+    crossorigin: anonymous
