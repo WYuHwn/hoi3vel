@@ -12,6 +12,7 @@ hexo.extend.injector.register('head_end', () => `
   <link rel="stylesheet" href="https://static.hzchu.top/lxgw-wenkai-screen-webfont@1.1.0/lxgwwenkaiscreen.css" media="all">
   <link rel="stylesheet" href="/mcss/mcss.css">
   <style>
+  // * { margin: 0; padding: 0; box-sizing: border-box; }
   body.noscroll { overflow: hidden; }
   .spinner {
     position: fixed; top: 0; right: 0; bottom: 0; left: 0;
