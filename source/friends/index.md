@@ -26,5 +26,8 @@ rightbar: [ghuser, links_model]
 # 2.特别鸣谢
 {% friends main_contribution %}
 
-# 3.小伙伴们
-{% friends blog_friends %}
+# 3.线下
+{% friends life_friends %}
+
+# 4.线上
+{% friends nets_friends %}
