@@ -23,11 +23,11 @@ topic: Major
 - 注释行：`CMake`中使用`#`实现行注释，可以放在任何位置
 - 注释块：`CMake`中使用`#[[]]`实现块注释
 
-```CMake
+```Txt
 # 这是一个CMakeLists.txt文件
 cmake_minimum_required(VERSION 3.0.0)
 
-# [[这是一个CMakeLists.txt文件
+#[[这是一个CMakeLists.txt文件
 这是一个CMakeLists.txt文件
 这是一个CMakeLists.txt文件]]
 cmake_minimum_required(VERSION 3.0.0)
@@ -48,7 +48,7 @@ $ tree
 
 ### 2.2.1 生成的配置文件不单独放入源文件夹中的子文件中
 在上述源文件夹中添加`CMakeLists.txt`。文件内容如下：
-```CMake
+```Txt
 cmake_minimum_required(VERSION 3.0)
 project(CALC)
 add_executable(app add.c div.c main.c multi.c sub.c)
@@ -59,7 +59,7 @@ add_executable(app add.c div.c main.c multi.c sub.c)
 - `add_executable`: 定义工程生成的可执行程序名字。(这里的可执行程序名字与项目名字无关)
 
 上述命令官方语法如下:
-```CMake
+```Txt
 # PROJECT 指令的语法是：
 project(<PROJECT-NAME> [<language-name>...])
 project(<PROJECT-NAME>
@@ -162,7 +162,7 @@ build
 
 ## 2.3 进阶语法
 在上面的例子中一共提供了5个源文件，假设这五个源文件需要被反复使用，每次都直接将它们的名字写出来比较麻烦，这时我们需要定义一个变量，该变量可将这些文件名存储起来，在`CMake`中定义变量需要使用关键字`set`。
-```CMake
+```Txt
 # SET指令语法：
 # []中的参数为可选项
 SET(VAR [VALUE] [CACHE TYPE DOCSTRING [FORCE]])
@@ -171,7 +171,7 @@ SET(VAR [VALUE] [CACHE TYPE DOCSTRING [FORCE]])
 - VAR: 变量名
 - VALUE: 变量值
 
-```CMake
+```Txt
 # 方式一: 各个源文件之间使用空格间隔
 # set(SRC_LIST add.c div.c main.c multi.c sub.c)
 
@@ -183,7 +183,7 @@ add_executable(app ${SRC_LIST})
 ### 2.3.1 指定使用C++标准
 在编写C++程序时可能会用到C++11、C++14、C++17、C++20等新特性，那么就需要在编译的时候指定出要使用哪个标准：`g++ *.cpp -std=c++11 -o app`。此命令通过`-std=c++11`指定出要使用C++11编译程序，C++标准对应有一宏叫做`DCMAKE_CXX_STANDARD`。在`CMake`中想要指定C++有两种方式：
 - 方式一：在CMakeLists.txt中通过set命令指定
-```CMake
+```Txt
 # 增加-std=c++11
 set(CMAKE_CXX_STANDARD 11)
 # 增加-std=c++14
@@ -214,7 +214,7 @@ set(EXECUTABLE_OUTPUT_PATH ${HOME}/bin)
 ### 2.3.3 搜索文件
 若一个项目里边的源文件很多，在编写`CMakeLists.txt`文件的时候不可能将项目目录的各个文件一一罗列出来。在`CMake`中提供了文件搜索命令，可以使用`aux_source_directory`命令或者`file`命令。
 - 方式一：在`CMake`中使用`aux_source_directory`命令可以查找某个路径下的的所有源文件。
-```CMake
+```Txt
 aux_source_directory(<dir> <variable>)
 ```
 - dir: 要搜索的目录
@@ -230,13 +230,13 @@ add_executable(app  ${SRC_LIST})
 
 ```
 - 方式二：采用`file`命令
-```CMake
+```Txt
 file(GLOB/GLOB_RECURSE 变量名 要搜索的文件路径和文件类型)
 ```
 - `GLOB`: 将指定目录下搜索到满足条件的所有文件名生成一个列表并将其存储到变量中。
 - `GLOB_RECURSE`: 递归搜索指定目录，将搜索到的满足条件的文件名生成一个列表并将其存储到变量中。
 
-```CMake
+```Txt
 file(GLOB MAIN_SRC ${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp)
 file(GLOB MAIN_HEAD ${CMAKE_CURRENT_SOURCE_DIR}/include/*.h)
 # file(GLOB MAIN_HEAD "${CMAKE_CURRENT_SOURCE_DIR}/src/*.h")
