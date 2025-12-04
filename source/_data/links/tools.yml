@@ -21,3 +21,9 @@
   cover:
   icon: 
   description: PDF处理工具
+
+- title: Vercel
+  url: https://vercel.com/
+  cover:
+  icon:
+  description: 网站部署工具
