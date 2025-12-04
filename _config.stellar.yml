@@ -122,21 +122,27 @@ site_tree:
 article:
   share: [wechat, weibo, email, link]
 
+# comments:
+#   service: giscus
+#   comment_title: 留下你的足迹叭~👣👣👣
+#   giscus:
+#     src: https://giscus.app/client.js
+#     data-repo: WYuHwn/hoi3vel # [在此输入仓库]
+#     data-repo-id: R_kgDOQh5KYw # [在此输入仓库 ID]
+#     data-category: Q&A # [在此输入分类名]
+#     data-category-id: DIC_kwDOQh5KY84CzWc3
+#     data-mapping: url
+#     data-strict: 0
+#     data-reactions-enabled: 1
+#     data-emit-metadata: 0
+#     data-input-position: bottom # top, bottom
+#     data-theme: preferred_color_scheme
+#     data-lang: zh-CN
+#     data-loading: lazy
+#     crossorigin: anonymous
+
 comments:
-  service: giscus
+  service: twikoo
   comment_title: 留下你的足迹叭~👣👣👣
-  giscus:
-    src: https://giscus.app/client.js
-    data-repo: WYuHwn/hoi3vel # [在此输入仓库]
-    data-repo-id: R_kgDOQh5KYw # [在此输入仓库 ID]
-    data-category: Q&A # [在此输入分类名]
-    data-category-id: DIC_kwDOQh5KY84CzWc3
-    data-mapping: url
-    data-strict: 0
-    data-reactions-enabled: 1
-    data-emit-metadata: 0
-    data-input-position: bottom # top, bottom
-    data-theme: preferred_color_scheme
-    data-lang: zh-CN
-    data-loading: lazy
-    crossorigin: anonymous
+  twikoo:
+    envId: https://twikoo-silk-beta.vercel.app/ # vercel函数
