@@ -70,7 +70,7 @@ footer:
     [渝ICP备-2024033351号-1](https://beian.miit.gov.cn/#/Integrated/recordQuery) | [浙公网安备33019202002449号](https://beian.mps.gov.cn/#/query/webSearch)
 
 style:
-  prefers_theme: auto # 指定网站主题模式 auto/light/dark
+  prefers_theme: light # 指定网站主题模式 auto/light/dark
   color:
     theme: '#744DA9' # 主题色
     accent: 'hsl(14 100% 57%)' # 强调色
