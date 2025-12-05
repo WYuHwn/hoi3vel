@@ -106,8 +106,11 @@ $ git push origin --delete 远程分支名 || git branch -dr 远程仓库/分支
 ```
 ## 2.远程同步
 ```Shell
-# 显示所有远程仓库
+# 显示当前origin所指向的远程仓库
 $ git remote -v
+
+# 更改origin所指向的远程仓库
+$ git remote set-url origin 新远程仓库地址
 
 # 显示某个远程仓库的信息
 $ git remote show 远程仓库
