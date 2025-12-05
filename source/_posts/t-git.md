@@ -76,8 +76,8 @@ $ git add fileName1 fileName2 ...
 # 将暂存区文件添加至本地仓库
 $ git commit -m "备注内容"
 
-# 将文件推送至本地仓库，常用命令“git push origin main”
-$ git push 仓库名 分支名
+# 将文件推送至远程仓库，常用命令“git push origin main”
+$ git push 远程仓库名 分支名
 ```
 
 # 三、其它常用命令
