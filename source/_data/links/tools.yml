@@ -22,8 +22,14 @@
   icon: 
   description: PDF处理工具
 
-- title: Vercel
-  url: https://vercel.com/
+- title: 代码随想录
+  url: https://programmercarl.com/
   cover:
   icon:
-  description: 网站部署工具
+  description: 算法讲解+项目储备
+
+- title: Ic-rating
+  url: https://huxulm.github.io/lc-rating/contest
+  cover:
+  icon:
+  description: 常规LeetCode题解
