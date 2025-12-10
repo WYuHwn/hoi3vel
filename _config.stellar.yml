@@ -40,12 +40,15 @@ footer:
     github:
       icon: '<img src="https://img.hoi3vel.cn/config/github.svg"/>'
       url: https://github.com/WYuHwn
-    weibo:
-      icon: '<img src="https://img.hoi3vel.cn/config/weibo.svg"/>'
-      url: https://weibo.com/u/7792806695
+    # weibo:
+    #   icon: '<img src="https://img.hoi3vel.cn/config/weibo.svg"/>'
+    #   url: https://weibo.com/u/7792806695
     leetcode:
       icon: '<img src="https://img.hoi3vel.cn/config/leetcode.svg"/>'
       url: https://leetcode.cn/u/hoi3vel/
+    telegram:
+      icon: '<img src="https://img.hoi3vel.cn/config/telegram.svg">'
+      url: https://t.me/+18654333185
   sitemap:
     - title: 导航
       items:
