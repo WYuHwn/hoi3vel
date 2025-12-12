@@ -18,7 +18,7 @@ rightbar: [ghuser, links_model]
 
 {% folding 站点信息 color:#744DA9 %}
 - title: hoi3vel
-- url: https://hoi3vel.cn/
+- url: https://www.hoi3vel.cn/
 - icon: https://img.hoi3vel.cn/config/avatar.webp
 - description: 一花一世界，一树一菩提。
 {% endfolding %}
